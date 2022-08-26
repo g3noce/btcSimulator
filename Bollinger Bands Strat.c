@@ -137,12 +137,12 @@ int main(int argc, char const *argv[]){
             sellEntry = crossover(arrBTCPrice, upper, length);
 
             if(buyEntry == 1){
-                system("wt powershell buy");
-                system("wt powershell \"python.exe .\\buy.py\"");
+                /*system("wt powershell buy");
+                system("wt powershell \"python.exe .\\buy.py\"");*/
             }
             if(sellEntry == 1){
-                system("wt powershell sell");
-                system("wt powershell \"python.exe .\\sell.py\"");
+                /*system("wt powershell sell");
+                system("wt powershell \"python.exe .\\sell.py\"");*/
             }
 
             printf("sma : %f\ndev : %f\nupper : %.2f\nlower : %.2f\ncurrent price : %.2f\n", sma, dev, upper, lower, close);
