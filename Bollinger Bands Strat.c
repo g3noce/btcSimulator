@@ -86,7 +86,7 @@ void getFilePrice(float *ptrArrNumbers, int length){
 
 
 int main(int argc, char const *argv[]){
-    system("wt powershell \"python.exe .\\downloadBtcData.py\"");
+    //dlBtcPrice();
     int length = 27;
     int lengthStdev = 24;
     float arrBTCPrice[27] = { 
@@ -137,12 +137,10 @@ int main(int argc, char const *argv[]){
             sellEntry = crossover(arrBTCPrice, upper, length);
 
             if(buyEntry == 1){
-                /*system("wt powershell buy");
-                system("wt powershell \"python.exe .\\buy.py\"");*/
+		    //buy();
             }
             if(sellEntry == 1){
-                /*system("wt powershell sell");
-                system("wt powershell \"python.exe .\\sell.py\"");*/
+		    //sell();
             }
 
             printf("sma : %f\ndev : %f\nupper : %.2f\nlower : %.2f\ncurrent price : %.2f\n", sma, dev, upper, lower, close);
